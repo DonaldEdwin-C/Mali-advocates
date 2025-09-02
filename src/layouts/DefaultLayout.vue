@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <main class="min-h-[100vh]">
+    <main>
       <slot />
 
       <RouterView />
