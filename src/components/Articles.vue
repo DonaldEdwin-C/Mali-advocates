@@ -29,14 +29,14 @@
               >
                 Read more
                 <svg
-                  class="w-3.5 h-3.5 ml-2"
+                  class="w-3.5 h-3.5 ml-2 text"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 14 10"
                 >
                   <path
-                    stroke="currentColor"
+                    stroke="#083c3c"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
@@ -72,7 +72,7 @@
               <div class="flex justify-end text-[#D9B679]">
                 <a
                   href="https://www.linkedin.com/pulse/sky-scrapper-city-look-physical-planning-law-relation-yd8jf/"
-                  class="flex text-end items-center px-3 py-1 text-sm font-normal"
+                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#e0b47c]"
                 >
                   Read more
                   <svg
@@ -121,7 +121,7 @@
               <div class="flex justify-end">
                 <a
                   href="https://www.linkedin.com/pulse/how-register-non-governmental-organizationngo-kenya-pgcaf/"
-                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#D9B679]"
+                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#e0b47c]"
                 >
                   Read more
                   <svg
@@ -170,7 +170,7 @@
               <div class="flex justify-end">
                 <a
                   href="https://www.linkedin.com/pulse/5-marketing-tips-keep-office-data-protection-commissioner/"
-                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#D9B679]"
+                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#e0b47c]"
                 >
                   Read more
                   <svg
