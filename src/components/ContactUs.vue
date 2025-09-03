@@ -6,7 +6,7 @@
       >
         <div class="w-full md:w-1/2">
           <div class="space-y-2">
-            <h2 class="text-lg font-bold">Contact Us</h2>
+            <h2 class="text-lg font-medium">Contact Us</h2>
             <div class="">
               Reach out to us for any question through this <br />available channels or send us a
               message
@@ -16,21 +16,21 @@
             <div class="flex items-center gap-3">
               <img class="rounded-t-lg" src="/src/assets/img/email-border.svg" alt="email" />
               <div class="ml-1 grow my-4">
-                <p class="font-bold">Email Us</p>
+                <p class="font-medium">Email Us</p>
                 <p class="">Info@mailadvocates.com</p>
               </div>
             </div>
             <div class="flex items-center gap-3">
               <img class="rounded-t-lg" src="/src/assets/img/phone-border.svg" alt="email" />
               <div class="ml-1 grow my-4">
-                <p class="font-bold">Call US.</p>
+                <p class="font-medium">Call US.</p>
                 <p class="">+254 702 601 502</p>
               </div>
             </div>
             <div class="flex items-center gap-3">
               <img class="rounded-t-lg" src="/src/assets/img/arrow.svg" alt="location" />
               <div class="ml-1 grow my-4">
-                <p class="font-bold">Find Us</p>
+                <p class="font-medium">Find Us</p>
                 <p class="">
                   House No.3 CySquare, <br />
                   Argwings Kodhek Road, Kilimani
@@ -39,7 +39,7 @@
             </div>
             <div class="flex items-center gap-3">
               <div class="ml-1 grow my-4">
-                <p class="font-bold">Social Media</p>
+                <p class="font-medium">Social Media</p>
                 <div class="flex space-x-3">
                   <a target="_blank" href="https://www.linkedin.com/in/mali-advocates-10a980267/"
                     ><img class="w-8 h-8" src="/src/assets/img/linkdn.svg" alt="linkdn"
