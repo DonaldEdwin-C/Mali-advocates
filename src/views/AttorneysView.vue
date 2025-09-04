@@ -8,7 +8,6 @@
     </section>
   </div>
 
-  <!-- Cards -->
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
     <div
       v-for="member in team"
@@ -33,10 +32,6 @@
 
   <div
 
-
-
-
-   
     v-if="showModal"
     class="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-60"
   >
