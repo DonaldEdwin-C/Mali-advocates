@@ -8,17 +8,19 @@
     </section>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+  <div class="flex flex-wrap justify-center gap-6 p-6">
     <div
       v-for="member in team"
       :key="member.name"
-      class="shadow-lg rounded-2xl overflow-hidden bg-white"
+    class="w-full sm:w-1/2 lg:w-1/3 max-w-[320px] shadow-lg overflow-hidden bg-[rgb(244,250,255)]"
     >
-      <img :src="member.image" :alt="member.name" class="w-full h-64 object-cover" />
+    <div class="p-4"> 
+      <img :src="member.image" :alt="member.name" class="w-full h-[333px] object-cover" />
+    </div>
       <div class="p-4">
-        <h3 class="text-lg text-[#04393a] font-semibold">{{ member.name }}</h3>
-        <p class="text-sm text-[#D9B679]">{{ member.title }}</p>
-        <p class="text-gray-500 text-sm mt-2">{{ member.shortBio }}</p>
+        <h3 class="text-lg text-[#04393a] font-nomal">{{ member.name }}</h3>
+        <p class="text-sm text-[#D9B679] font-normal">{{ member.title }}</p>
+        <p class="text-black font-thin text-xs mt-2">{{ member.shortBio }}</p>
 
         <button
           @click="openModal(member)"
