@@ -45,8 +45,10 @@
         <div class="flex items-center">
           <div class="hidden md:flex items-center space-x-2">
             <div class="">
-              <button class="bg-[#D9B679] text-white font-medium px-5 py-2 rounded-md flex items-center">
-                Book Consultation
+              <button
+                class="bg-[#D9B679] text-white font-medium px-5 py-2 rounded-md flex items-center"
+              >
+                <RouterLink to="/book-consultation" class="">Book Consultation</RouterLink>
               </button>
             </div>
           </div>
