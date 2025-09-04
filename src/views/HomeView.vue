@@ -31,8 +31,7 @@ import Values from '@/components/Values.vue'
               <button
                 class="bg-[#e0b47c] text-white font-normal px-5 py-2 rounded-md flex items-center"
               >
-                <!--[-->
-                Book a Consoltation<!--]-->
+                <RouterLink to="/book-consultation" class="">Book a Consultation</RouterLink>
               </button>
             </div>
           </div>

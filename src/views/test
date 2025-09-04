@@ -1,0 +1,167 @@
+<template>
+  <div>
+    <div class="container mx-auto px-8 sm:px-16">
+      <div class="mt-24">
+        <h1 class="flex justify-center font-bold text-2xl">Book a Date With Us.</h1>
+        <p class="flex justify-center mt-4 text-center px-3">
+          Book a date and time . We we get back to you and give you more information
+        </p>
+      </div>
+      <div
+        class="min-w-screen min-h-screen flex items-center p-2 sm:p-5 lg:p-10 overflow-hidden relative"
+      >
+        <div
+          class="w-full max-w-7xl rounded bg-white md:shadow-xl text-darkGreen md:p-10 mx-auto relative md:text-left"
+        >
+          <div class="max-w-md mx-auto my-8">
+            <h3 class="uppercase my-3 font-bold">Select a Date</h3>
+
+            <div class="bg-white shadow rounded-lg overflow-hidden">
+              <!-- Topbar -->
+              <div class="flex justify-between items-center bg-blue-600 text-white px-4 py-2">
+                <button @click="prev" class="font-bold">&lt;</button>
+                <span @click="toggleView" class="cursor-pointer font-semibold">
+                  {{
+                    currentView === 'day' ? months[displayMonth] + ' ' + displayYear : displayYear
+                  }}
+                </span>
+                <button @click="next" class="font-bold">&gt;</button>
+              </div>
+
+              <!-- Day View -->
+              <div v-if="currentView === 'day'" class="p-4">
+                <!-- Day headers -->
+                <div class="grid grid-cols-7 text-center font-semibold text-gray-700">
+                  <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span> <span>Thu</span
+                  ><span>Fri</span><span>Sat</span>
+                </div>
+                <!-- Days -->
+                <div class="grid grid-cols-7 text-center gap-1 mt-1">
+                  <span
+                    v-for="day in daysInMonth"
+                    :key="day + Math.random()"
+                    @click="selectDay(day)"
+                    :class="[
+                      'w-10 h-10 flex items-center justify-center rounded cursor-pointer',
+                      day === selectedDate.getDate() &&
+                      displayMonth === selectedDate.getMonth() &&
+                      displayYear === selectedDate.getFullYear()
+                        ? 'bg-blue-500 text-white font-bold'
+                        : 'hover:bg-blue-200',
+                    ]"
+                  >
+                    {{ day }}
+                  </span>
+                </div>
+              </div>
+
+              <!-- Month View -->
+              <div v-if="currentView === 'month'" class="p-4 grid grid-cols-3 gap-2 text-center">
+                <span
+                  v-for="(month, index) in months"
+                  :key="month"
+                  @click="selectMonth(index)"
+                  class="cursor-pointer hover:bg-blue-200 rounded py-2"
+                >
+                  {{ month }}
+                </span>
+              </div>
+
+              <!-- Year View -->
+              <div v-if="currentView === 'year'" class="p-4 grid grid-cols-4 gap-2 text-center">
+                <span
+                  v-for="year in years"
+                  :key="year"
+                  @click="selectYear(year)"
+                  class="cursor-pointer hover:bg-blue-200 rounded py-2"
+                >
+                  {{ year }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script setup>
+import { ref, computed } from 'vue'
+
+// Current view: 'day', 'month', 'year'
+const currentView = ref('day')
+
+// Selected date
+const selectedDate = ref(new Date())
+const displayMonth = ref(selectedDate.value.getMonth()) // 0-11
+const displayYear = ref(selectedDate.value.getFullYear())
+
+// Month & Year arrays
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+]
+const years = Array.from({ length: 10 }, (_, i) => 2020 + i)
+
+// Compute days for the month
+const daysInMonth = computed(() => {
+  const date = new Date(displayYear.value, displayMonth.value + 1, 0)
+  const numDays = date.getDate()
+  const firstDay = new Date(displayYear.value, displayMonth.value, 1).getDay()
+  const blanks = Array.from({ length: firstDay }, () => '')
+  const days = Array.from({ length: numDays }, (_, i) => i + 1)
+  return [...blanks, ...days]
+})
+
+// Navigation functions
+function prev() {
+  if (currentView.value === 'day') {
+    displayMonth.value--
+    if (displayMonth.value < 0) {
+      displayMonth.value = 11
+      displayYear.value--
+    }
+  } else if (currentView.value === 'month') displayYear.value--
+  else displayYear.value -= 10
+}
+
+function next() {
+  if (currentView.value === 'day') {
+    displayMonth.value++
+    if (displayMonth.value > 11) {
+      displayMonth.value = 0
+      displayYear.value++
+    }
+  } else if (currentView.value === 'month') displayYear.value++
+  else displayYear.value += 10
+}
+
+function selectDay(day) {
+  if (day !== '') selectedDate.value.setDate(day)
+}
+
+function selectMonth(monthIndex) {
+  displayMonth.value = monthIndex
+  currentView.value = 'day'
+}
+
+function selectYear(year) {
+  displayYear.value = year
+  currentView.value = 'month'
+}
+
+function toggleView() {
+  if (currentView.value === 'day') currentView.value = 'month'
+  else if (currentView.value === 'month') currentView.value = 'year'
+}
+</script>

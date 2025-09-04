@@ -63,7 +63,7 @@
               <button
                 class="bg-[#D9B679] text-white font-medium px-5 py-2 rounded-md flex items-center"
               >
-                Book Consultation
+                <RouterLink to="/book-consultation" class="">Book Consultation</RouterLink>
               </button>
             </div>
           </div>
