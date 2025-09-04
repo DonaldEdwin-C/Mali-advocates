@@ -61,7 +61,7 @@
           <div class="hidden md:flex items-center space-x-2">
             <div class="">
               <button
-                class="bg-[#e0b47c] text-white font-medium px-5 py-2 rounded-md flex items-center"
+                class="bg-[#D9B679] text-white font-medium px-5 py-2 rounded-md flex items-center"
               >
                 Book Consultation
               </button>
