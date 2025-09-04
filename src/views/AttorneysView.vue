@@ -9,52 +9,60 @@
   </div>
 
   <div class="flex flex-wrap justify-center gap-6 p-6">
-    <div
-      v-for="member in team"
-      :key="member.name"
-    class="w-full sm:w-1/2 lg:w-1/3 max-w-[320px] shadow-lg overflow-hidden bg-[rgb(244,250,255)]"
-    >
-    <div class="p-4"> 
-      <img :src="member.image" :alt="member.name" class="w-full h-[333px] object-cover" />
-    </div>
+    <div v-for="member in team" :key="member.name"
+      class="w-full sm:w-1/2 lg:w-1/3 max-w-[320px] shadow-lg overflow-hidden bg-[rgb(244,250,255)]">
+      <div class="p-4">
+        <img :src="member.image" :alt="member.name" class="w-full h-[333px] object-cover" />
+      </div>
       <div class="p-4">
         <h3 class="text-lg text-[#04393a] font-nomal">{{ member.name }}</h3>
         <p class="text-sm text-[#D9B679] font-normal">{{ member.title }}</p>
         <p class="text-black font-thin text-xs mt-2">{{ member.shortBio }}</p>
 
-        <button
-          @click="openModal(member)"
-          class="mt-3 text-[#D9B679] text-sm font-medium underline"
-        >
-          Read More
-        </button>
+        <div class="flex w-full space-x-3 mt-5 mb-1 justify-between">
+          <div class="flex gap-3 items-center">
+            <img class="w-8 h-8" src="/src/assets/img/phone-border.svg">
+            <p class="font-normal">{{ member.contact }}</p>
+          </div>
+          <div class="flex gap-3">
+            <a>
+              <img class="w-8 h-8" src="/src/assets/img/linkdn.svg">
+            </a>
+            <a>
+              <img class="w-8 h-8" src="/src/assets/img/email-border.svg">
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="flex justify-end mt-3">
+          <button @click="openModal(member)" class="text-[#D9B679] text-sm font-medium underline">
+            Read More
+          </button>
+        </div>
+
       </div>
     </div>
   </div>
 
-  <div
+  <div v-if="showModal" class="fixed inset-0 flex items-center justify-center z-50"
+    style="background-color: rgba(0,0,0,0.6);">
+    <div v-if="activeMember"
+      class="bg-[#fff] shadow-lg w-full max-w-3xl max-h-[70vh] overflow-y-auto p-6 relative rounded">
+      <div>
+        <button @click="closeModal" class="absolute  top-3 right-3 text-gray-500 hover:text-gray-700">
+          ✕
+        </button>
+      </div>
 
-    v-if="showModal"
-    class="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-60"
-  >
-    <div
-    
-      v-if="activeMember"
-      class="bg-white rounded-xl shadow-lg w-full max-w-2xl max-h-[80vh] overflow-y-auto p-6 relative"
-    >
-      <button @click="closeModal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
-        ✕
-      </button>
-
-      <div class="space-y-4">
-        <h2 class="text-xl font-bold">{{ activeMember.name }}</h2>
-        <p class="text-sm text-gray-500">{{ activeMember.title }}</p>
-        <img
-          :src="activeMember.image"
-          :alt="activeMember.name"
-          class="w-32 h-32 rounded-full object-cover mx-auto"
-        />
-        <p class="text-gray-700 text-sm whitespace-pre-line">
+      <div class="">
+        <h2 class="text-lg font-normal">{{ activeMember.name }}
+          <span class="text-lg font-normal">{{ activeMember.description }}</span>
+        </h2>
+        <img :src="activeMember.image" :alt="activeMember.name" class="w-32 h-32 object-cover justify-end" />
+        <p class="text-sm text-[#D9B679]">{{ activeMember.title }}</p>
+        <p class="text-gray-700 text-xs whitespace-pre-line">
           {{ activeMember.fullBio }}
         </p>
       </div>
@@ -69,10 +77,11 @@ const team = [
   {
     name: 'Celestine Koile',
     title: 'Managing Partner',
+    contact: '+254 706 039 562',
+    description: 'LLB, KSL (PGDip)',
     shortBio:
       'Head of Real Estate and Banking Practice Group, the Dispute Resolution Practice Group, and the Capital Markets Practice Group. With a wealth of experience in property law, real estate transactions, banking regulations, capital markets, and dispute resolution, Celestine is a trusted advisor for clients navigating complex legal landscapes. Her in-depth understanding of these specialized areas positions MALI Advocates LLP as a premier firm for those seeking expert legal services.',
-    fullBio: `Managing Partner
-Email: ckoile@maliadvocates.com
+    fullBio: `Email: ckoile@maliadvocates.com
 INTRODUCTION
 Celestine Koile is the Managing Partner at MALI Advocates LLP, where she leads with a commitment to legal excellence and client-focused solutions. Her principal areas of practice span Dispute Resolution, Commercial Transactions, Conveyancing and Real Estate, Employment and Labour Law, Banking and Finance, FinTech, Joint Ventures, Company Law, Insolvency and Debt Restructuring, and general commercial matters.
 
@@ -109,10 +118,11 @@ Celestine's diverse skill set, coupled with her roles in corporate governance an
   {
     name: 'Adamskey Dudi',
     title: 'Partner',
+    contact: '+254 705 790 285',
+    description: 'LLB, KSL (PGDip), Professional Mediator',
     shortBio:
       'With a rich background in corporate law, Adams brings extensive experience to MALI Advocates LLP. His expertise includes mergers and acquisitions, corporate governance, and regulatory compliance. Adams is known for his strategic legal advice, contributing significantly to the firms success',
-    fullBio: `Partner
-Email: aojwang@maliadvocates.com
+    fullBio: `Email: aojwang@maliadvocates.com
 INTRODUCTION
 Adamskey s a partner at MALI Advocates LLP. Adamskey holds a Bachelor of Laws degree from the Moi University School of Law as well as a Post-Graduate Diploma from the Kenya School of Law. He is an accredited professional Mediator by Mediation Training Institute East Africa and is a member of the Law Society of Kenya. Currently Persuing Certified Secretary KASNEB.
 
@@ -132,10 +142,11 @@ Conducting local and multi-jurisdictional legal due diligence on behalf of inves
   {
     name: 'Annie Brenda Ndambuki',
     title: 'Lawyer/Trainee Advocate/Certified Professional Mediator',
+    contant: '',
+    description: 'KSL (PGDip), Lawyer/Trainee Advocate/Certified Professional Mediator',
     shortBio:
       'With a rich background in corporate law, Adams brings extensive experience to MALI Advocates LLP. His expertise includes mergers and acquisitions, corporate governance, and regulatory compliance. Adams is known for his strategic legal advice, contributing significantly to the firms success',
-    fullBio: `Lawyer/Trainee Advocate/Certified Professional Mediator
-Email: 
+    fullBio: `Email: 
 INTRODUCTION
 Annie is a “Jack of all trades” with the credentials and ambition to back it up. She is a trainee advocate who brings to the team a sharp legal mind, with growing expertise in commercial law, dispute resolution and corporate governance. A Certified Professional Mediator and a lover of all things analytical, Annie is also pursuing certification as a Company Secretary – because why stop at one qualification? When she is not immersed in case law or legal research, Annie swaps statutes for sneakers. She’s a fierce competitor on the basketball court and on the sports shooting arena. Whether in litigation or shooting, Annie brings precision, strategy and tenacity to every challenge she takes on.`,
     image: '/src/images/annie.png',
@@ -143,10 +154,11 @@ Annie is a “Jack of all trades” with the credentials and ambition to back it
   {
     name: 'Victor Maina',
     title: 'L.L.B Graduate, Certified Secretaries (Advanced Level)',
-    shortBio: 
-    'Victor Maina is a dedicated and results-driven legal professional with a Bachelor of Laws degree from the Catholic University of Eastern Africa. Renowned for his innovative approach and meticulous attention to detail, Victor brings strategic insight, diligence, and a strong work ethic to every matter he handles',
-    fullBio: `L.L.B Graduate, Certified Secretaries (Advanced Level)
-Email: 
+    contact: '',
+    description: 'L.L.B Graduate, Certified Secretaries (Advanced Level)',
+    shortBio:
+      'Victor Maina is a dedicated and results-driven legal professional with a Bachelor of Laws degree from the Catholic University of Eastern Africa. Renowned for his innovative approach and meticulous attention to detail, Victor brings strategic insight, diligence, and a strong work ethic to every matter he handles',
+    fullBio: `Email: 
 INTRODUCTION
 Victor Maina is a dedicated and results-driven legal professional with a Bachelor of Laws degree from the Catholic University of Eastern Africa. Renowned for his innovative approach and meticulous attention to detail, Victor brings strategic insight, diligence, and a strong work ethic to every matter he handles.
 
@@ -156,10 +168,11 @@ Victor has carved out a strong niche in tax litigation and advisory, where he wa
   {
     name: 'Benard Muriithi Kariuki',
     title: 'Advocate of the High Court of Kenya',
+    contact: '',
+    description: 'Advocate of the High Court of Kenya',
     shortBio:
-    'Meet Benard Muriithi Kariuki aka ‘Wakili Karis’, an Advocate of the High Court of Kenya who believes that no legal problem is too big, nor too small, for a creative mind and a steady cup of Mocha. With a practice as varied as Nairobi’s traffic (and just as lively), Benard handles it all: Alternative Dispute Resolution for when you want to settle things amicably, Commercial and Civil Litigation for when the gloves come off, Criminal Law for those “it wasn’t me!” moments, and Data Protection for the digital age skeptics among us',
-    fullBio: `Advocate of the High Court of Kenya
-Email: 
+      'Meet Benard Muriithi Kariuki aka ‘Wakili Karis’, an Advocate of the High Court of Kenya who believes that no legal problem is too big, nor too small, for a creative mind and a steady cup of Mocha. With a practice as varied as Nairobi’s traffic (and just as lively), Benard handles it all: Alternative Dispute Resolution for when you want to settle things amicably, Commercial and Civil Litigation for when the gloves come off, Criminal Law for those “it wasn’t me!” moments, and Data Protection for the digital age skeptics among us',
+    fullBio: `Email: 
 INTRODUCTION
 Meet Benard Muriithi Kariuki aka ‘Wakili Karis’, an Advocate of the High Court of Kenya who believes that no legal problem is too big, nor too small, for a creative mind and a steady cup of Mocha. With a practice as varied as Nairobi’s traffic (and just as lively), Benard handles it all: Alternative Dispute Resolution for when you want to settle things amicably, Commercial and Civil Litigation for when the gloves come off, Criminal Law for those “it wasn’t me!” moments, and Data Protection for the digital age skeptics among us.
 
@@ -170,7 +183,7 @@ When companies hit rough waters, Benard jumps in to steer the ship, tackling cor
 Clients appreciate his ability to translate “legalese” into everyday language and his talent for turning legal challenges into operational wins. With Benard on your team, your interests are always in good hands, and your legal journey, just a bit less daunting.`,
     image: '/src/images/benard.png',
   },
-  
+
 ]
 
 const showModal = ref(false)
@@ -184,5 +197,3 @@ function closeModal() {
   showModal.value = false
 }
 </script>
-
-
