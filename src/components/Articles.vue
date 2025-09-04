@@ -22,7 +22,7 @@
               Ever wondered how to complain against your Advocate in instances of professional
               misconduct or unprofessional conduct? Here's how...
             </p>
-            <div class="flex text-[#083c3c] justify-end">
+            <div class="flex text-[#D9B679] justify-end">
               <a
                 href="https://www.linkedin.com/pulse/complaints-against-advocates-mali-advocates-llp-tftef/"
                 class="flex text-end items-center px-3 py-1 text-sm font-normal"
@@ -69,10 +69,10 @@
                 This article looks into the importance of proper land use planning and development
                 control in the midst Kenya's continually changing demographic landscape...
               </p>
-              <div class="flex justify-end">
+              <div class="flex justify-end text-[#D9B679]">
                 <a
                   href="https://www.linkedin.com/pulse/sky-scrapper-city-look-physical-planning-law-relation-yd8jf/"
-                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#083c3c]"
+                  class="flex text-end items-center px-3 py-1 text-sm font-normal"
                 >
                   Read more
                   <svg
@@ -121,7 +121,7 @@
               <div class="flex justify-end">
                 <a
                   href="https://www.linkedin.com/pulse/how-register-non-governmental-organizationngo-kenya-pgcaf/"
-                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#083c3c]"
+                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#D9B679]"
                 >
                   Read more
                   <svg
@@ -170,7 +170,7 @@
               <div class="flex justify-end">
                 <a
                   href="https://www.linkedin.com/pulse/5-marketing-tips-keep-office-data-protection-commissioner/"
-                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#083c3c]"
+                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#D9B679]"
                 >
                   Read more
                   <svg

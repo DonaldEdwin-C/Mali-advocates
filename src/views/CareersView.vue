@@ -5,14 +5,14 @@ import JobCard from '@/components/JobCard.vue';
 <template>
   <div class="max-w-full min-h-screen">
     <div class="h-[200px] bg-[url('https://www.maliadvocatesllp.com/_nuxt/law-books.DnsjHjPE.png')] bg-cover bg-center bg-no-repeat bg-position-[50%] relative flex items-center ">
-      <div class="absolute inset-0 bg-[#04393A] opacity-80"></div>
-     <div class="px-8 sm:px-16 flex items-center w-full  contrast-50">
+      <div class="absolute inset-0 bg-[#04393A] "></div>
+     <div class="px-8 sm:px-16 flex items-center w-full  absolute inset-0 opacity-90">
        <div class="w-full mx-auto   flex items-center justify-between  ">
        <div class="pr-4 px-2 md:px-12">
-         <h2 class="text-[#FFFFFF]  quick-sand mb-4 md:text-2xl ">Available Jobs</h2>
+         <h2 class="text-[#FFFFFF]   mb-4 md:text-2xl ">Available Jobs</h2>
        </div>
        <div class="flex items-center pl-4 px-12 md:px-12">
-         <h4 class="text-[#D9B679] text-[1.125rem] quick-sand ">Home/Careers</h4>
+         <h4 class="text-[#D9B679] text-[1.125rem]  ">Home/Careers</h4>
        </div>
       </div>
      </div>
@@ -21,7 +21,7 @@ import JobCard from '@/components/JobCard.vue';
             <div class="flex flex-wrap md:flex-no-wrap justfiy-between mt-10 w-full">
                 <div class="flex my-3 mx-auto md:w-1/3 w-2/3">
                     <input type="search" placeholder="Search For a Keywords..."
-                        class="border border-gray-300 h-12 px-5  pr-10 w-full text-sm rounded-l-lg placeholder:text-gray-400  quick-sand">
+                        class="border border-gray-300 h-12 px-5  pr-10 w-full text-sm rounded-l-lg placeholder:text-gray-400  ">
                     <button type="submit"
                         class="bg-gray-100 border border-gray-300 hover:bg-gray-200 text-gray-600 h-12 w-10 rounded-r-lg text-center flex justify-center items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -32,7 +32,7 @@ import JobCard from '@/components/JobCard.vue';
                         </svg>
                     </button>
                 </div>
-                <div class="flex mx-auto justify-center gap-8 quick-sand">
+                <div class="flex mx-auto justify-center gap-8 ">
                     <h1 class="my-2">Sort By:</h1>
                     <div>
                         <div class="relative inline-block text-left">
