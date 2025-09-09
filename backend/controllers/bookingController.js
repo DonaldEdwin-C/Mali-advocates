@@ -1,32 +1,33 @@
+import transporter from "../config/mailer.js";
 
-import transporter from "../config/mailer";
 
 const createBooking = async (req, res) => {
-  const { name, email, date } = req.body;
-
-  if (!name || !email || !date) {
-    return res.status(400).json({ error: "Missing booking details" });
-  }
-
+  console.log('port here',process.env.PORT)
   try {
-    // send confirmation email
+    const { names, email, phone_number, service, meetingtype, date, time } = req.body;
+
+    if (!names || !email || !phone_number || !service || !meetingtype || !date || !time) {
+      return res.status(400).json({ error: "Missing required booking details" });
+    }
+
     const info = await transporter.sendMail({
-      from: '"Bookings" <maddison53@ethereal.email>',
+      from: `"Bookings" <your_email@gmail.com>`, 
       to: email,
       subject: "Booking Confirmation",
-      text: `Hi ${name}, your booking for ${date} is confirmed.`,
-      html: `<p>Hi <b>${name}</b>, your booking for <b>${date}</b> is confirmed.</p>`,
+      text: `Hi ${names}, your booking for ${service} on ${date} at ${time} is confirmed.`,
+      html: `<p>Hi <b>${names}</b>, your booking for <b>${service}</b> on <b>${date}</b> at <b>${time}</b> is confirmed.</p>`
     });
 
-    res.json({
+    res.status(201).json({
       message: "Booking created successfully",
-      booking: { name, email, date },
-      mailId: info.messageId,
+      booking: { names, email, phone_number, service, meetingtype, date, time },
+      mailId: info.messageId
     });
+
   } catch (error) {
-    console.error("Error sending mail:", error);
+    console.error("Error creating booking:", error);
     res.status(500).json({ error: "Internal server error" });
   }
 };
 
-export default createBooking
+export default createBooking;

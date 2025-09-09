@@ -1,16 +1,13 @@
+import nodemailer from "nodemailer";
 
-import nodemailer from 'nodemailer'
-// host: "smtp.gmail.com",
-//  port: 465, 
 const transporter = nodemailer.createTransport({
-  host: "smtp.ethereal.email",
-  port: 587,
-  secure: false,
+  host: "smtp.gmail.com",   
+  port: 587,                
+  secure: false,           
   auth: {
-    user: "maddison53@ethereal.email",
-    pass: "jn7jnAPss4f63QBp6D",
-  },
+    user: "your_email@gmail.com",
+    pass: "your_app_password"
+  }
 });
 
-
-export default transporter
+export default transporter;
