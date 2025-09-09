@@ -49,14 +49,15 @@
   <div v-if="showModal" class="fixed inset-0 flex items-center justify-center z-50"
     style="background-color: rgba(0,0,0,0.6);">
     <div v-if="activeMember"
-      class="bg-[#fff] shadow-lg w-full max-w-3xl max-h-[70vh] overflow-y-auto p-6 relative rounded">
-      <div>
-        <button @click="closeModal" class="absolute  top-3 right-3 text-gray-500 hover:text-gray-700">
-          ✕
+      class="bg-[#fff] shadow-lg w-full max-w-3xl max-h-[70vh] overflow-y-auto relative rounded">
+    <div class="flex justify-end px-5 my-3">
+        <button @click="closeModal" class="absolute  top-3 right-10 text-gray-500 hover:text-gray-700">
+          X
         </button>
       </div>
 
-      <div class="">
+      <div class="max-h-[70vh] overflow-y-auto">
+        <div class="px-8">
         <h2 class="text-lg font-normal">{{ activeMember.name }}
           <span class="text-lg font-normal">{{ activeMember.description }}</span>
         </h2>
@@ -65,6 +66,7 @@
         <p class="text-gray-700 text-xs whitespace-pre-line">
           {{ activeMember.fullBio }}
         </p>
+        </div>
       </div>
     </div>
   </div>
@@ -80,16 +82,16 @@ const team = [
     contact: '+254 706 039 562',
     description: 'LLB, KSL (PGDip)',
     shortBio:
-      'Head of Real Estate and Banking Practice Group, the Dispute Resolution Practice Group, and the Capital Markets Practice Group. With a wealth of experience in property law, real estate transactions, banking regulations, capital markets, and dispute resolution, Celestine is a trusted advisor for clients navigating complex legal landscapes. Her in-depth understanding of these specialized areas positions MALI Advocates LLP as a premier firm for those seeking expert legal services.',
+      'Head of Real Estate and Banking Practice Group, the Dispute Resolution Practice Group, and the Capital Markets Practice Group. With a wealth of experience in property law, real estate transactions, banking regulations, capital markets, and dispute resolution, Celestine is a trusted advisor for clients navigating complex legal landscapes. Her in-depth understanding of these specialized areas positions CKoile Advocates LLP as a premier firm for those seeking expert legal services.',
     fullBio: `Email: ckoile@maliadvocates.com
 INTRODUCTION
-Celestine Koile is the Managing Partner at MALI Advocates LLP, where she leads with a commitment to legal excellence and client-focused solutions. Her principal areas of practice span Dispute Resolution, Commercial Transactions, Conveyancing and Real Estate, Employment and Labour Law, Banking and Finance, FinTech, Joint Ventures, Company Law, Insolvency and Debt Restructuring, and general commercial matters.
+Celestine Koile is the Managing Partner at CKoile Advocates LLP, where she leads with a commitment to legal excellence and client-focused solutions. Her principal areas of practice span Dispute Resolution, Commercial Transactions, Conveyancing and Real Estate, Employment and Labour Law, Banking and Finance, FinTech, Joint Ventures, Company Law, Insolvency and Debt Restructuring, and general commercial matters.
 
 A Certified Professional Mediator, Celestine brings a deep understanding of alternative dispute resolution to her practice. She is currently pursuing studies in Certified Secretary, further expanding her expertise in corporate governance and compliance.
 
 Celestine also serves as the Compliance Officer for a leading capital markets player and sits on the Cytonn Board as a Strategic Legal and Compliance Officer. She provides essential guidance on legal and regulatory matters, ensuring that her clients' operations remain compliant with the relevant laws. In addition, Celestine assists companies with outsourced legal officer requirements, offering tailored legal solutions to meet the evolving needs of corporate clients.
 
-Noteable Experience
+NOTEABLE EXPERIENCE
 Dispute Resolution & Litigation
 Part of the team that drove the settlement of a series of cases involving a leading real estate development firm in Kenya, focusing on minority shareholder rights. This led to the settlement of a claim exceeding KES 1.5 billion.
 Representing a real estate development firm in a high-stakes arbitration concerning a commercial dispute valued at KES 5.9 billion.
@@ -121,14 +123,14 @@ Celestine's diverse skill set, coupled with her roles in corporate governance an
     contact: '+254 705 790 285',
     description: 'LLB, KSL (PGDip), Professional Mediator',
     shortBio:
-      'With a rich background in corporate law, Adams brings extensive experience to MALI Advocates LLP. His expertise includes mergers and acquisitions, corporate governance, and regulatory compliance. Adams is known for his strategic legal advice, contributing significantly to the firms success',
+      'With a rich background in corporate law, Adams brings extensive experience to CKoile Advocates LLP. His expertise includes mergers and acquisitions, corporate governance, and regulatory compliance. Adams is known for his strategic legal advice, contributing significantly to the firms success',
     fullBio: `Email: aojwang@maliadvocates.com
 INTRODUCTION
-Adamskey s a partner at MALI Advocates LLP. Adamskey holds a Bachelor of Laws degree from the Moi University School of Law as well as a Post-Graduate Diploma from the Kenya School of Law. He is an accredited professional Mediator by Mediation Training Institute East Africa and is a member of the Law Society of Kenya. Currently Persuing Certified Secretary KASNEB.
+Adamskey s a partner at CKoile Advocates LLP. Adamskey holds a Bachelor of Laws degree from the Moi University School of Law as well as a Post-Graduate Diploma from the Kenya School of Law. He is an accredited professional Mediator by Mediation Training Institute East Africa and is a member of the Law Society of Kenya. Currently Persuing Certified Secretary KASNEB.
 
 His principal arears of practice are in Civil and commercial litigation including :banking and finance law, defamation law, employment law, constitutional law and judicial review, real estate and conveyancing, and environment law
 
-Noteable Experience
+NOTEABLE EXPERIENCE
 Representing several leading banks and financial institutions in proceedings challenging the realization of their securities in various forms including charges, personal and corporate guarantees and bills of exchange
 Representing clients across diverse sectors in prosecuting and defending proceedings on the constitutionality and administrative propriety of actions by the government, public and private institutions and enforcement of fundamental rights and freedoms
 Advising and acting for both corporate and individual clients on different aspects of employment law including employee entitlements, performance, disciplinary separation procedures, redundancy and retirement benefits
@@ -145,7 +147,7 @@ Conducting local and multi-jurisdictional legal due diligence on behalf of inves
     contant: '',
     description: 'KSL (PGDip), Lawyer/Trainee Advocate/Certified Professional Mediator',
     shortBio:
-      'With a rich background in corporate law, Adams brings extensive experience to MALI Advocates LLP. His expertise includes mergers and acquisitions, corporate governance, and regulatory compliance. Adams is known for his strategic legal advice, contributing significantly to the firms success',
+      'With a rich background in corporate law, Adams brings extensive experience to CKoile Advocates LLP. His expertise includes mergers and acquisitions, corporate governance, and regulatory compliance. Adams is known for his strategic legal advice, contributing significantly to the firms success',
     fullBio: `Email: 
 INTRODUCTION
 Annie is a “Jack of all trades” with the credentials and ambition to back it up. She is a trainee advocate who brings to the team a sharp legal mind, with growing expertise in commercial law, dispute resolution and corporate governance. A Certified Professional Mediator and a lover of all things analytical, Annie is also pursuing certification as a Company Secretary – because why stop at one qualification? When she is not immersed in case law or legal research, Annie swaps statutes for sneakers. She’s a fierce competitor on the basketball court and on the sports shooting arena. Whether in litigation or shooting, Annie brings precision, strategy and tenacity to every challenge she takes on.`,
