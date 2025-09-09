@@ -202,7 +202,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-
+import axios from 'axios'
 const currentView = ref('day')
 const selectedDate = ref(new Date())
 const displayMonth = ref(selectedDate.value.getMonth())
@@ -295,10 +295,22 @@ function selectTime(time) {
 }
 
 //  Submit form
-function submitForm() {
+async function submitForm() {
   form.value.date = selectedDate.value.toDateString()
   form.value.time = selectedTime.value
-   const formData= {...form.value}
+  const formData= {...form.value}
+
+     try {
+       let response = await axios.post(`${import.meta.env.VITE_BASE_URL}/bookings`,formData)
+       let  data = response.data
+       console.log(data)
+
+     } catch (error) {
+       console.log(error)
+     }
+   
+
+
   console.log("Form submitted:", formData)
 }
 </script>
