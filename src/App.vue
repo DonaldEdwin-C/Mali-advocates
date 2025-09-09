@@ -4,4 +4,5 @@ import DefaultLayout from '../src/layouts/DefaultLayout.vue'
 
 <template>
   <DefaultLayout />
+
 </template>

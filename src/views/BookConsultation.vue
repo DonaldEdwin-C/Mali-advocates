@@ -15,8 +15,21 @@
             <div>
               <div class="my-8">
                 <h3 class="uppercase my-3 font-medium">Select A date</h3>
+
+            
                 <div class="flex items-center">
-                  <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                  <div class="bg-white shadow-md overflow-hidden">
+                    <div
+                  v-if="selectedDate"
+                  class="bg-[#48bc84] text-white text-center py-8 mb-4"
+                >
+                  <div class="text-lg font-bold">
+                    {{ selectedDate.getFullYear() }}
+                  </div>
+                  <div class="text-sm">
+                    {{ weekdayName }}, {{ selectedDate.getDate() }} {{ months[selectedDate.getMonth()] }}
+                  </div>
+                </div>
                     <!-- Topbar -->
                     <div class="flex justify-between items-center text-neurtal-700 px-4 py-2">
                       <button @click="prev" class="font-medium">&lt;</button>
@@ -32,14 +45,12 @@
 
                     <!-- Day View -->
                     <div v-if="currentView === 'day'" class="p-4">
-                      <!-- Day headers -->
                       <div
                         class="grid grid-cols-7 text-sm text-center font-normal uppercase text-gray-700"
                       >
                         <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span>
                         <span>Thu</span><span>Fri</span><span>Sat</span>
                       </div>
-                      <!-- Days -->
                       <div
                         class="grid grid-cols-7 text-sm font-thin text-center gap-y-3 gap-x-6 mt-3"
                       >
@@ -52,7 +63,7 @@
                             day === selectedDate.getDate() &&
                             displayMonth === selectedDate.getMonth() &&
                             displayYear === selectedDate.getFullYear()
-                              ? 'font-normal'
+                              ? 'bg-[#48bc84] text-white'
                               : 'hover:border border-[var(color-primary)]',
                           ]"
                         >
@@ -102,62 +113,48 @@
               </div>
               <div>
                 <input
+                  v-model="form.names"
                   type="text"
-                  name="names"
-                  id="names"
                   placeholder="Full Names"
                   class="w-full px-4 py-3 rounded-lg bg-gray-100 mt-2 border border-gray-200 focus:outline-none"
                 />
               </div>
               <div>
                 <input
+                  v-model="form.email"
                   type="email"
-                  name="email"
-                  id="email"
                   placeholder="Email"
                   class="w-full px-4 py-3 rounded-lg bg-gray-100 mt-2 border border-gray-200 focus:outline-none"
                 />
               </div>
               <div>
                 <input
+                  v-model="form.phone_number"
                   type="tel"
-                  name="phone_number"
-                  id="phone_number"
                   placeholder="Phone Number"
                   class="w-full px-4 py-3 rounded-lg bg-gray-100 mt-2 border border-gray-200 focus:outline-none"
                 />
               </div>
               <div>
                 <select
-                  name="service"
-                  id="service"
-                  placeholder="Enter Phone Number"
+                  v-model="form.service"
                   class="w-full px-4 py-3 rounded-lg bg-gray-100 mt-2 border border-gray-200 focus:outline-none"
                 >
                   <option value="">Choose a Service</option>
-                  <option value="Real Estate, Construction and Conveyancing">
-                    Corporate &amp; Commercial
+                  <option value="Corporate & Commercial">Corporate & Commercial</option>
+                  <option value="Contracted Corporate Services">Contracted Corporate Services</option>
+                  <option value="Debt Recovery">Debt Recovery</option>
+                  <option value="Dispute Resolution">Dispute Resolution</option>
+                  <option value="Capital Markets">Capital Markets</option>
+                  <option value="Real Estate, Construction & Conveyancing">
+                    Real Estate, Construction & Conveyancing
                   </option>
-                  <option value="Real Estate, Construction and Conveyancing">
-                    Contracted Corporate Services
-                  </option>
-                  <option value="Real Estate, Construction and Conveyancing">Debt Recovery</option>
-                  <option value="Real Estate, Construction and Conveyancing">
-                    Dispute Resolution
-                  </option>
-                  <option value="Real Estate, Construction and Conveyancing">
-                    Capital Markets
-                  </option>
-                  <option value="Real Estate, Construction and Conveyancing">
-                    Real Estate, Construction &amp; Conveyancing
-                  </option>
-                  <option value="Real Estate, Construction and Conveyancing">Tax</option>
+                  <option value="Tax">Tax</option>
                 </select>
               </div>
               <div>
                 <select
-                  name="meetingtype"
-                  id="meetingtype"
+                  v-model="form.meetingtype"
                   class="w-full px-4 py-3 rounded-lg bg-gray-100 mt-2 border border-gray-200 focus:outline-none"
                 >
                   <option value="">Choose meeting option</option>
@@ -168,29 +165,17 @@
               <h3 class="uppercase my-3 font-medium">Time</h3>
               <div class="flex flex-wrap justify-around md:justify-start gap-1 md:gap-2 my-5">
                 <button
-                  class="bg-white border border-[#e0b47c] text-[#e0b47c] px-3 py-2 md:px-5 md:w-28 md:py-3 text-sm md:text-base rounded-full font-semibold"
+                  v-for="time in times"
+                  :key="time"
+                  @click="selectTime(time)"
+                  :class="[
+                    'px-3 py-2 md:px-5 md:w-28 md:py-3 text-sm md:text-base rounded-full font-semibold border transition-colors duration-200',
+                    selectedTime === time
+                      ? 'bg-[#D9B679] text-white border-[#e0b47c]'
+                      : 'bg-white text-[#e0b47c] border-[#e0b47c]'
+                  ]"
                 >
-                  8:00 AM</button
-                ><button
-                  class="bg-white border border-[#e0b47c] text-[#e0b47c] px-3 py-2 md:px-5 md:w-28 md:py-3 text-sm md:text-base rounded-full font-semibold"
-                >
-                  10:00 AM</button
-                ><button
-                  class="bg-white border border-[#e0b47c] text-[#e0b47c] px-3 py-2 md:px-5 md:w-28 md:py-3 text-sm md:text-base rounded-full font-semibold"
-                >
-                  12:00 AM</button
-                ><button
-                  class="bg-white border border-[#e0b47c] text-[#e0b47c] px-3 py-2 md:px-5 md:w-28 md:py-3 text-sm md:text-base rounded-full font-semibold"
-                >
-                  2:00 PM</button
-                ><button
-                  class="bg-white border border-[#e0b47c] text-[#e0b47c] px-3 py-2 md:px-5 md:w-28 md:py-3 text-sm md:text-base rounded-full font-semibold"
-                >
-                  4:00 PM</button
-                ><button
-                  class="bg-white border border-[#e0b47c] text-[#e0b47c] px-3 py-2 md:px-5 md:w-28 md:py-3 text-sm md:text-base rounded-full font-semibold"
-                >
-                  6:00 PM
+                  {{ time }}
                 </button>
               </div>
               <p class="text-xs">
@@ -198,9 +183,10 @@
                 <span class="text-[#e0b47c]">privacy policy.</span>
               </p>
               <div class="flex justify-end my-5">
-                <div class="">
+                <div>
                   <button
-                    class="bg-[#e0b47c] text-white font-semiboldbg-[#e0b47c] font-semibold px-5 py-2 rounded-md flex items-center"
+                    @click="submitForm"
+                    class="bg-[#e0b47c] text-white font-semibold px-5 py-2 rounded-md flex items-center"
                   >
                     Book Now &gt;
                   </button>
@@ -213,35 +199,41 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import { ref, computed } from 'vue'
-
-// Current view: 'day', 'month', 'year'
+import axios from 'axios'
 const currentView = ref('day')
-
-// Selected date
 const selectedDate = ref(new Date())
-const displayMonth = ref(selectedDate.value.getMonth()) // 0-11
+const displayMonth = ref(selectedDate.value.getMonth())
 const displayYear = ref(selectedDate.value.getFullYear())
+const selectedTime = ref(null)
 
-// Month & Year arrays
+//  form object
+const form = ref({
+  names: '',
+  email: '',
+  phone_number: '',
+  service: '',
+  meetingtype: '',
+  date: '',
+  time: '',
+})
+
+// Arrays
 const months = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December',
+  'January','February','March','April','May','June',
+  'July','August','September','October','November','December',
 ]
 const years = Array.from({ length: 10 }, (_, i) => 2020 + i)
+const times = ["8:00 AM", "10:00 AM", "12:00 AM", "2:00 PM", "4:00 PM", "6:00 PM"]
 
-// Compute days for the month
+// Weekday name
+const weekdayName = computed(() =>
+  selectedDate.value.toLocaleDateString('en-US', { weekday: 'long' })
+)
+
+// Days in month
 const daysInMonth = computed(() => {
   const date = new Date(displayYear.value, displayMonth.value + 1, 0)
   const numDays = date.getDate()
@@ -251,7 +243,7 @@ const daysInMonth = computed(() => {
   return [...blanks, ...days]
 })
 
-// Navigation functions
+// Calendar functions
 function prev() {
   if (currentView.value === 'day') {
     displayMonth.value--
@@ -275,7 +267,10 @@ function next() {
 }
 
 function selectDay(day) {
-  if (day !== '') selectedDate.value.setDate(day)
+  if (day !== '') {
+    selectedDate.value = new Date(displayYear.value, displayMonth.value, day)
+    form.value.date = selectedDate.value.toDateString()
+  }
 }
 
 function selectMonth(monthIndex) {
@@ -291,5 +286,31 @@ function selectYear(year) {
 function toggleView() {
   if (currentView.value === 'day') currentView.value = 'month'
   else if (currentView.value === 'month') currentView.value = 'year'
+}
+
+function selectTime(time) {
+  selectedTime.value = time
+  form.value.time = time
+  console.log("Selected:", time)
+}
+
+//  Submit form
+async function submitForm() {
+  form.value.date = selectedDate.value.toDateString()
+  form.value.time = selectedTime.value
+  const formData= {...form.value}
+
+     try {
+       let response = await axios.post(`${import.meta.env.VITE_BASE_URL}/bookings`,formData)
+       let  data = response.data
+       console.log(data)
+
+     } catch (error) {
+       console.log(error)
+     }
+   
+
+
+  console.log("Form submitted:", formData)
 }
 </script>
