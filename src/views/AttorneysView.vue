@@ -115,7 +115,7 @@ Serving as the Compliance Officer for a leading capital markets player, ensuring
 Sitting on the Cytonn Board as a Strategic Legal and Compliance Officer, advising on governance, regulatory compliance, and legal matters.
 Assisting companies with outsourced legal officer requirements, providing tailored legal services to businesses looking for flexible and comprehensive legal solutions.
 Celestine's diverse skill set, coupled with her roles in corporate governance and compliance, positions her as a trusted advisor to clients in both the public and private sectors. Her strategic insight, coupled with her practical legal experience, ensures that her clients' legal needs are met with the highest standards of professionalism and expertise.`,
-    image: '/src/images/celestine.png',
+    image: '/src/assets/img/celestine.png',
   },
   {
     name: 'Adamskey Dudi',
@@ -139,7 +139,7 @@ Acting for a diverse range of clients on matters touching on environmental and l
 Acting for clients in high-value, complex and delicate commercial arbitrations including disputes on aviation insurance, aircraft ownership, construction and telecommunications
 Acting for the Registrar of Political Parties and the Independent Electoral and Boundaries Commission in political party disputes and election petitions in various forums including the Political Parties Dispute Tribunal and the High Court.
 Conducting local and multi-jurisdictional legal due diligence on behalf of investors, advising on regulatory compliance across diverse industries including in the areas of public procurement and public-private partnerships, preparing and negotiating transactional documentation.`,
-    image: '/src/images/adamskey.png',
+    image: '/src/assets/img/adamskey.png',
   },
   {
     name: 'Annie Brenda Ndambuki',
@@ -151,7 +151,7 @@ Conducting local and multi-jurisdictional legal due diligence on behalf of inves
     fullBio: `Email: 
 INTRODUCTION
 Annie is a “Jack of all trades” with the credentials and ambition to back it up. She is a trainee advocate who brings to the team a sharp legal mind, with growing expertise in commercial law, dispute resolution and corporate governance. A Certified Professional Mediator and a lover of all things analytical, Annie is also pursuing certification as a Company Secretary – because why stop at one qualification? When she is not immersed in case law or legal research, Annie swaps statutes for sneakers. She’s a fierce competitor on the basketball court and on the sports shooting arena. Whether in litigation or shooting, Annie brings precision, strategy and tenacity to every challenge she takes on.`,
-    image: '/src/images/annie.png',
+    image: '/src/assets/img/annie.png',
   },
   {
     name: 'Victor Maina',
@@ -165,7 +165,7 @@ INTRODUCTION
 Victor Maina is a dedicated and results-driven legal professional with a Bachelor of Laws degree from the Catholic University of Eastern Africa. Renowned for his innovative approach and meticulous attention to detail, Victor brings strategic insight, diligence, and a strong work ethic to every matter he handles.
 
 Victor has carved out a strong niche in tax litigation and advisory, where he was part of a team that successfully lodged a tax objection against a tax assessment of Kshs 1.2 billion. He possesses a clear and up-to-date understanding of Kenya's ever-evolving tax laws and legislation. His expertise spans across Withholding Tax, Value Added Tax (VAT), Pay as You Earn (PAYE), and Corporation Tax. Victor has consistently provided clear, concise, and strategic tax advice to a wide range of clients, including both individuals and corporate entities.`,
-    image: '/src/images/victor.png',
+    image: '/src/assets/img/victor.png',
   },
   {
     name: 'Benard Muriithi Kariuki',
@@ -183,7 +183,7 @@ Conveyancing, Family Law, Employment disputes, and even those thorny Land and En
 When companies hit rough waters, Benard jumps in to steer the ship, tackling corporate restructuring, liquidation, administration, and tax litigation with sharp focus and a dash of good humor. His secret weapon? An uncanny knack for spotting compliance pitfalls before anyone else does.
 
 Clients appreciate his ability to translate “legalese” into everyday language and his talent for turning legal challenges into operational wins. With Benard on your team, your interests are always in good hands, and your legal journey, just a bit less daunting.`,
-    image: '/src/images/benard.png',
+    image: '/src/assets/img/benard.png',
   },
 
 ]
