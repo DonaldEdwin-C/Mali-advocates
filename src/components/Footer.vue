@@ -59,7 +59,7 @@
             />
             <div class="flex justify-end ml-3 mt-3">
               <button
-                class="bg-[#e0b47c] text-white font-light px-5 py-2 rounded-md flex items-center"
+                class="bg-[var(--color-secondary)] text-white font-light px-5 py-2 rounded-md flex items-center"
               >
                 Subscribe
               </button>

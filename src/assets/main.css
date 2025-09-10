@@ -4,6 +4,7 @@
 
 :root {
   --color-primary: #203c8c;
+  --color-secondary:#ff8e1e;
 }
 body {
   font-family: 'Quicksand', sans-serif;

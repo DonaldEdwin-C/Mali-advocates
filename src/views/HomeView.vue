@@ -20,7 +20,7 @@ import Values from '@/components/Values.vue'
         <div class="text-white mt-11 md:mt-20">
           <h2 class="mb-4 text-2xl md:text-6xl lg:text-7xl lg:w-2/3 font-medium">
             Where Legal
-            <span class="text-[#e0b47c]">Excellence Meets</span> Business Solutions.
+            <span class="text-[var(--color-secondary)]">Excellence Meets</span> Business Solutions.
           </h2>
           <h4 class="mt-11 md:text-2xl lg:w-1/2 font-normal">
             We pride ourselves on delivering comprehensive legal solutions tailored to meet the
@@ -29,7 +29,7 @@ import Values from '@/components/Values.vue'
           <div class="mt-8">
             <div class="">
               <button
-                class="bg-[#e0b47c] text-white font-normal px-5 py-2 rounded-md flex items-center"
+                class="bg-[var(--color-secondary)] text-white font-normal px-5 py-2 rounded-md flex items-center"
               >
                 <RouterLink to="/book-consultation" class="">Book a Consultation</RouterLink>
               </button>
@@ -50,9 +50,9 @@ import Values from '@/components/Values.vue'
       </div>
       <div class="w-full md:w-1/2">
         <div class="mb-10">
-          <h1 class="text-bold text-xl text-[#e0b47c] font-normal">ABOUT US</h1>
+          <h1 class="text-bold text-xl text-[var(--color-secondary)] font-normal">ABOUT US</h1>
           <h1 class="text-bold text-3xl lg:text-4xl mb-3 font-semibold">
-            Fast, Accurate, <span class="text-[#e0b47c]">Innovative </span> and Reliable
+            Fast, Accurate, <span class="text-[var(--color-secondary)]">Innovative </span> and Reliable
           </h1>
           <div class="text-lg">
             <p class="my-2">
@@ -72,7 +72,7 @@ import Values from '@/components/Values.vue'
             <a
               href="https://wa.me/+254702601502"
               target="_blank"
-              class="border hover:text-white hover:bg-[#e0b47c] border-[#e0b47c] text-[#e0b47c] rounded-lg px-10 py-3 font-normal"
+              class="border hover:text-white hover:bg-[var(--color-secondary)] border-[var(--color-secondary)] text-[var(--color-secondary)] rounded-lg px-10 py-3 font-normal"
             >
               Chat With Us
             </a>
@@ -91,7 +91,7 @@ import Values from '@/components/Values.vue'
       <div class="w-full md:w-1/2">
         <div class="mb-10">
           <h1 class="text-bold text-3xl lg:text-4xl mb-3 font-medium">
-            Why <span class="text-[#e0b47c]">Choose </span> Us
+            Why <span class="text-[var(--color-secondary)]">Choose </span> Us
           </h1>
           <div class="text-lg">
             <p class="my-2">
@@ -106,21 +106,21 @@ import Values from '@/components/Values.vue'
             <ul class="list-disc">
               <li>
                 <p class="my-1">
-                  <span class="text-[#e0b47c] font-medium">Industry Insight:</span> our advocates
+                  <span class="text-[var(--color-secondary)] font-medium">Industry Insight:</span> our advocates
                   possess in depth knowledge of the real estate and banking industries allowing us
                   to anticipate challenges and provide proactive solutions.
                 </p>
               </li>
               <li>
                 <p class="my-1">
-                  <span class="text-[#e0b47c] font-medium">Client Centric Approach:</span> We
+                  <span class="text-[var(--color-secondary)] font-medium">Client Centric Approach:</span> We
                   prioritize understanding our clients business goals tailoring legal solutions to
                   align with their objectives.
                 </p>
               </li>
               <li>
                 <p class="my-1">
-                  <span class="text-[#e0b47c] font-medium"> Collaborative team:</span> our
+                  <span class="text-[var(--color-secondary)] font-medium"> Collaborative team:</span> our
                   multidisciplinary approach involves collaboration across legal disciplines to
                   provide holistic solutions, especially in complex transactions.
                 </p>
@@ -133,7 +133,7 @@ import Values from '@/components/Values.vue'
             <a
               href="https://wa.me/+254702601502"
               target="_blank"
-              class="border hover:text-white hover:bg-[#e0b47c] border-[#e0b47c] text-[#e0b47c] rounded-lg px-10 py-3 font-medium"
+              class="border hover:text-white hover:bg-[var(--color-secondary)] border-[var(--color-secondary)] text-[var(--color-secondary)] rounded-lg px-10 py-3 font-medium"
             >
               Chat With Us
             </a>

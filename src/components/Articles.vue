@@ -72,7 +72,7 @@
               <div class="flex justify-end text-[#D9B679]">
                 <a
                   href="https://www.linkedin.com/pulse/sky-scrapper-city-look-physical-planning-law-relation-yd8jf/"
-                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#e0b47c]"
+                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[var(--color-secondary)]"
                 >
                   Read more
                   <svg
@@ -121,7 +121,7 @@
               <div class="flex justify-end">
                 <a
                   href="https://www.linkedin.com/pulse/how-register-non-governmental-organizationngo-kenya-pgcaf/"
-                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#e0b47c]"
+                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[var(--color-secondary)]"
                 >
                   Read more
                   <svg
@@ -170,7 +170,7 @@
               <div class="flex justify-end">
                 <a
                   href="https://www.linkedin.com/pulse/5-marketing-tips-keep-office-data-protection-commissioner/"
-                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[#e0b47c]"
+                  class="flex text-end items-center px-3 py-1 text-sm font-normal text-[var(--color-secondary)]"
                 >
                   Read more
                   <svg

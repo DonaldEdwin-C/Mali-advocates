@@ -16,7 +16,7 @@
       </div>
       <div class="p-4">
         <h3 class="text-lg text-[#04393a] font-nomal">{{ member.name }}</h3>
-        <p class="text-sm text-[#D9B679] font-normal">{{ member.title }}</p>
+        <p class="text-sm text-[var(--color-secondary)] font-normal">{{ member.title }}</p>
         <p class="text-black font-thin text-xs mt-2">{{ member.shortBio }}</p>
 
         <div class="flex w-full space-x-3 mt-5 mb-1 justify-between">
@@ -37,7 +37,7 @@
         </div>
 
         <div class="flex justify-end mt-3">
-          <button @click="openModal(member)" class="text-[#D9B679] text-sm font-medium underline">
+          <button @click="openModal(member)" class="text-[var(--color-secondary)] text-sm font-medium underline">
             Read More
           </button>
         </div>
@@ -62,7 +62,7 @@
           <span class="text-lg font-normal">{{ activeMember.description }}</span>
         </h2>
         <img :src="activeMember.image" :alt="activeMember.name" class="w-32 h-32 object-cover justify-end" />
-        <p class="text-sm text-[#D9B679]">{{ activeMember.title }}</p>
+        <p class="text-sm text-[var(--color-secondary)]">{{ activeMember.title }}</p>
         <p class="text-gray-700 text-xs whitespace-pre-line">
           {{ activeMember.fullBio }}
         </p>

@@ -171,8 +171,8 @@
                   :class="[
                     'px-3 py-2 md:px-5 md:w-28 md:py-3 text-sm md:text-base rounded-full font-semibold border transition-colors duration-200',
                     selectedTime === time
-                      ? 'bg-[#D9B679] text-white border-[#e0b47c]'
-                      : 'bg-white text-[#e0b47c] border-[#e0b47c]'
+                      ? 'bg-[#D9B679] text-white border-[var(--color-secondary)]'
+                      : 'bg-white text-[var(--color-secondary)] border-[var(--color-secondary)]'
                   ]"
                 >
                   {{ time }}
@@ -180,13 +180,13 @@
               </div>
               <p class="text-xs">
                 Your personal data will be used to process your order. For more information read our
-                <span class="text-[#e0b47c]">privacy policy.</span>
+                <span class="text-[var(--color-secondary)]">privacy policy.</span>
               </p>
               <div class="flex justify-end my-5">
                 <div>
                   <button
                     @click="submitForm"
-                    class="bg-[#e0b47c] text-white font-semibold px-5 py-2 rounded-md flex items-center"
+                    class="bg-[var(--color-secondary)] text-white font-semibold px-5 py-2 rounded-md flex items-center"
                   >
                     Book Now &gt;
                   </button>

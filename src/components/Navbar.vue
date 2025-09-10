@@ -26,7 +26,7 @@
   </div>
   <div>
     <div class="bg-white shadow-md">
-      <nav class="container relative flex items-center justify-between mx-auto px-8 sm:px-16 z-30 py-5 relative">
+      <nav class="container  flex items-center justify-between mx-auto px-8 sm:px-16 z-30 py-5 relative">
         <div class="">
           <a to="/" class="w-30 flex items-center"><img src="/logo2.jpg" alt="mali-advocates" class="" /></a>
         </div>
@@ -46,7 +46,7 @@
           <div class="hidden md:flex items-center space-x-2">
             <div class="">
               <button
-                class="bg-[#D9B679] text-white font-medium px-5 py-2 rounded-md flex items-center"
+                class="bg-[#ff8e1e] text-white font-medium px-5 py-2 rounded-md flex items-center"
               >
                 <RouterLink to="/book-consultation" class="">Book Consultation</RouterLink>
               </button>

@@ -11,7 +11,7 @@
                 class="quick-sand text-2xl first-line md:text-4xl font-normal px-3 lg:w-2/3 text-center mx-auto"
               >
                 We are dedicated to offering solutions that are both innovative and practical for
-                our clients <br /><span class="text-[#e0b47c]">Get in touch with us.</span>
+                our clients <br /><span class="text-[var(--color-secondary)]">Get in touch with us.</span>
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@
         <a
           target="_blank"
           href="https://wa.me/+254702601502"
-          class="flex justify-center bg-[#e0b47c] text-white mx-auto font-normal hover:bg-whiteBrown hover:text-white border border-whiteBrown px-8 w-max py-2 rounded-md items-center"
+          class="flex justify-center bg-[var(--color-secondary)] text-white mx-auto font-normal hover:bg-whiteBrown hover:text-white border border-whiteBrown px-8 w-max py-2 rounded-md items-center"
           defaultbtn="false"
         >
           Chat Now
@@ -64,7 +64,7 @@
         </div>
         <div class="flex justify-center">
           <button
-            class="bg-[#e0b47c] text-white font-normal px-5 py-2 rounded-md flex items-center"
+            class="bg-[var(--color-secondary)] text-white font-normal px-5 py-2 rounded-md flex items-center"
           >
             Book Now
           </button>
