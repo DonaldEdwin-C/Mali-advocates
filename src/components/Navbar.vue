@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-[#083c3c] relative">
-    <div class="text-sm flex justify-between container px-8 sm:px-16 py-2 text-[#e0b47c] mx-auto">
+  <div class="bg-[var(--color-primary)] relative">
+    <div class="text-sm flex justify-between container px-8 sm:px-16 py-2 text-white mx-auto">
       <div class="flex gap-5 flex-wrap justify-between w-full">
         <div class="flex items-center space-x-3">
           <img src="/src/assets/img/email.svg" class="w-5 h-5" alt="email" />
@@ -28,18 +28,18 @@
     <div class="bg-white shadow-md">
       <nav class="container relative flex items-center justify-between mx-auto px-8 sm:px-16 z-30 py-5 relative">
         <div class="">
-          <a to="/" class="flex items-center"><img src="/src/assets/img/logo.png" alt="mali-advocates" class="" /></a>
+          <a to="/" class="w-30 flex items-center"><img src="/public/logo2.jpg" alt="mali-advocates" class="" /></a>
         </div>
         <div class="hidden lg:flex space-x-3 font-light text-sm">
-          <RouterLink to="/" class="text-[#083c3c] uppercase py-2 px-3 rounded-md hover:bg-gray-100">Home</RouterLink>
-          <RouterLink to="/attorneys" class="text-[#083c3c] uppercase py-2 px-3 rounded-md hover:bg-gray-100">Attorneys
+          <RouterLink to="/" class="text-[var(--color-primary)] uppercase py-2 px-3 rounded-md hover:bg-gray-100">Home</RouterLink>
+          <RouterLink to="/attorneys" class="text-[var(--color-primary)] uppercase py-2 px-3 rounded-md hover:bg-gray-100">Attorneys
           </RouterLink>
           <RouterLink to="/practice"
-            class="legal text-[#083c3c] flex items-center uppercase group py-2 px-3 rounded-md hover:bg-gray-100 cursor-pointer">
+            class="legal text-[var(--color-primary)] flex items-center uppercase group py-2 px-3 rounded-md hover:bg-gray-100 cursor-pointer">
             Practice Areas </RouterLink>
-          <RouterLink to="/blog" class="text-[#083c3c] uppercase py-2 px-3 rounded-md hover:bg-gray-100">Blog
+          <RouterLink to="/blog" class="text-[var(--color-primary)] uppercase py-2 px-3 rounded-md hover:bg-gray-100">Blog
           </RouterLink>
-          <RouterLink to="/careers" class="text-[#083c3c] uppercase py-2 px-3 rounded-md hover:bg-gray-100">Careers
+          <RouterLink to="/careers" class="text-[var(--color-primary)] uppercase py-2 px-3 rounded-md hover:bg-gray-100">Careers
           </RouterLink>
         </div>
         <div class="flex items-center">
@@ -66,15 +66,15 @@
         <div
           class="absolute top-20 border border-[#e5e7eb] right-0 mr-8 lg:hidden lg:w-max mt-2 py-3 flex flex-col bg-white shadow-md rounded-md p-2 px-5 space-y-2 transition-all duration-500"
           v-show="showMenu">
-          <RouterLink to="/" class="text-[#083c3c] uppercase py-2 px-3 rounded-md hover:bg-gray-100" @click="showMenu=false">Home</RouterLink>
-          <RouterLink to="/attorneys" class="text-[#083c3c] uppercase py-2 px-3 rounded-md hover:bg-gray-100" @click="showMenu=false">Attorneys
+          <RouterLink to="/" class="text-[var(--color-primary)] uppercase py-2 px-3 rounded-md hover:bg-gray-100" @click="showMenu=false">Home</RouterLink>
+          <RouterLink to="/attorneys" class="text-[var(--color-primary)] uppercase py-2 px-3 rounded-md hover:bg-gray-100" @click="showMenu=false">Attorneys
           </RouterLink>
           <RouterLink to="/practice"
-            class="legal text-[#083c3c] flex items-center uppercase group py-2 px-3 rounded-md hover:bg-gray-100 cursor-pointer" @click="showMenu=false">
+            class="legal text-[var(--color-primary)] flex items-center uppercase group py-2 px-3 rounded-md hover:bg-gray-100 cursor-pointer" @click="showMenu=false">
             Practice Areas </RouterLink>
-          <RouterLink to="/blog" class="text-[#083c3c] uppercase py-2 px-3 rounded-md hover:bg-gray-100" @click="showMenu=false">Blog
+          <RouterLink to="/blog" class="text-[var(--color-primary)] uppercase py-2 px-3 rounded-md hover:bg-gray-100" @click="showMenu=false">Blog
           </RouterLink>
-          <RouterLink to="/careers" class="text-[#083c3c] uppercase py-2 px-3 rounded-md hover:bg-gray-100" @click="showMenu=false">Careers
+          <RouterLink to="/careers" class="text-[var(--color-primary)] uppercase py-2 px-3 rounded-md hover:bg-gray-100" @click="showMenu=false">Careers
           </RouterLink>
          
         </div>

@@ -12,7 +12,7 @@ import Values from '@/components/Values.vue'
       style=""
     >
       <div
-        class="absolute inset-0 h-full w-full overflow-hidden bg-fixed bg-[#083c3c] opacity-70"
+        class="absolute inset-0 h-full w-full overflow-hidden bg-fixed bg-[var(--color-primary)] opacity-70"
       ></div>
       <div
         class="container mx-auto flex h-full pt-20 px-8 sm:px-16 absolute inset-0 justify-center"

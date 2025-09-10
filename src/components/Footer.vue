@@ -1,10 +1,10 @@
 <template>
-  <footer class="bg-[#083c3c] mb-0 text-white sticky top-[100vh] py-5">
+  <footer class="bg-[var(--color-primary)] mb-0 text-white sticky top-[100vh] py-5">
     <div class="container mx-auto flex flex-col md:flex-row px-8 sm:px-16 justify-between">
       <div class="md:w-1/3 mb-6 md:mb-0">
         <div class="flex-col items-center mb-2">
           <div class="m-5">
-            <img src="/src/assets/img/logo-dark.png" alt="maili-advocates" />
+            <img class="w-40" src="/public/logo-light.png" alt="maili-advocates" />
           </div>
           <div class="m-5">
             <div>
