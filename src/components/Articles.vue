@@ -10,7 +10,7 @@
       <div class="">
         <div class="bg-white border overflow-hidden border-gray-200 rounded-lg shadow">
           <div class="overflow-hidden">
-            <img class="w-full object-contain" src="/src/assets/img/articles/article1.png" alt="" />
+            <img class="w-full object-contain" src="/img/articles/article1.png" alt="" />
           </div>
           <div class="p-3">
             <a href="#"
@@ -54,7 +54,7 @@
             <div class="h-[183px] overflow-hidden">
               <img
                 class="w-full object-contain"
-                src="/src/assets/img/articles/article2.png"
+                src="/img/articles/article2.png"
                 alt=""
               />
             </div>
@@ -101,7 +101,7 @@
             <div class="h-[183px] overflow-hidden">
               <img
                 class="w-full object-contain"
-                src="/src/assets/img/articles/article3.png"
+                src="/img/articles/article3.png"
                 alt=""
               />
             </div>
@@ -150,7 +150,7 @@
             <div class="h-[183px] overflow-hidden">
               <img
                 class="w-full object-contain"
-                src="/src/assets/img/articles/article4.png"
+                src="/img/articles/article4.png"
                 alt=""
               />
             </div>

@@ -5,7 +5,7 @@ import JobCard from '@/components/JobCard.vue';
 <template>
   <div class="max-w-full min-h-screen">
     <div class="h-[200px] bg-[url('https://www.maliadvocatesllp.com/_nuxt/law-books.DnsjHjPE.png')] bg-cover bg-center bg-no-repeat bg-position-[50%] relative flex items-center ">
-      <div class="absolute inset-0 bg-[#04393A] "></div>
+      <div class="absolute inset-0 bg-[var(--color-primary)] "></div>
      <div class="px-8 sm:px-16 flex items-center w-full  absolute inset-0 opacity-90">
        <div class="w-full mx-auto   flex items-center justify-between  ">
        <div class="pr-4 px-2 md:px-12">

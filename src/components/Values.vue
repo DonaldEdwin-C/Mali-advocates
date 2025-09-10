@@ -3,7 +3,7 @@
     <div
       class="relative bg-[url(/src/assets/img/law-books.png)] h-[570px] bg-cover bg-no-repeat text-center"
     >
-      <div class="absolute inset-0 h-full overflow-hidden bg-fixed bg-[#083c3c] opacity-80">
+      <div class="absolute inset-0 h-full overflow-hidden bg-fixed bg-[var(--color-primary)] opacity-80">
         <div class="container mx-auto px-8 sm:px-16 w-full">
           <div class="text-white mt-28">
             <h2 class="mb-4 text-2xl lg:text-5xl font-semibold">Our Values</h2>

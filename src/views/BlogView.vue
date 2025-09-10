@@ -5,7 +5,7 @@ import ContactUs from '@/components/ContactUs.vue'
 
 <template>
   <div class="">
-    <div class="relative bg-cover bg-no-repeat text-center h-[600px] bg-[url('/src/assets/img/ladyJustice.png')] w-full overflow">
+    <div class="relative bg-cover bg-no-repeat text-center h-[600px] bg-[url('/img/ladyJustice.png')] w-full overflow">
       <div class="absolute inset-0 h-full w-full overflow-hidden bg-fixed bg-[var(--color-primary)] opacity-80"></div>
       <div class="mx-auto px-8 sm:px-16 absolute inset-0 opacity-90">
         <div class="h-full flex pt-20 justify-center">
