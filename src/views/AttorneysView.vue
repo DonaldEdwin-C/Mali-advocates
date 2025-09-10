@@ -81,8 +81,8 @@
               </template>
 
               <template v-else-if="section.type === 'list'">
-                <ul class="list-disc list-inside space-y-1">
-                  <li v-for="(item, i) in section.items" :key="i">{{ item }}</li>
+                <ul class="list-disc  space-y-1 py-2">
+                  <li v-for="(item, i) in section.items" :key="i" class="text-justify">{{ item }}</li>
                 </ul>
               </template>
             </div>
