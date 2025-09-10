@@ -4,18 +4,18 @@
       <div class="flex gap-5 flex-wrap justify-between w-full">
         <div class="flex items-center space-x-3">
           <img src="/img/email.svg" class="w-5 h-5" alt="email" />
-          <p class="font-light">Email: info@maliadvocates.com</p>
+          <p class="font-light">Email: info@ckoilelaw.com</p>
         </div>
         <div class="hidden sm:flex items-center space-x-3">
           <img src="/img/location.svg" class="w-5 h-5" alt="" />
           <p class="font-light">
-            Location: House No.3 CySquare, <br />
-            Argwings Kodhek Road, Kilimani
+            Location: Cysuites Apartment Hotel, <br />
+            Church Road, Westlands
           </p>
         </div>
         <div class="flex items-center space-x-3 gap-5">
           <img src="/img/phone.svg" class="w-5 h-5" alt="" />
-          <p class="font-light">Call Us: +254 702 601502</p>
+          <p class="font-light">Call Us: +254 111535482</p>
           <div class="flex space-x-3 m-0">
             <a target="_blank" to="https://www.linkedin.com/in/mali-advocates-10a980267/"><img class="w-8 h-8"
                 src="/img/linkdn.svg" alt="linkdn" /></a>
