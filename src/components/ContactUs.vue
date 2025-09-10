@@ -14,21 +14,21 @@
           </div>
           <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div class="flex items-center gap-3">
-              <img class="rounded-t-lg" src="/src/assets/img/email-border.svg" alt="email" />
+              <img class="rounded-t-lg" src="/img/email-border.svg" alt="email" />
               <div class="ml-1 grow my-4">
                 <p class="font-medium">Email Us</p>
                 <p class="">Info@mailadvocates.com</p>
               </div>
             </div>
             <div class="flex items-center gap-3">
-              <img class="rounded-t-lg" src="/src/assets/img/phone-border.svg" alt="email" />
+              <img class="rounded-t-lg" src="/img/phone-border.svg" alt="email" />
               <div class="ml-1 grow my-4">
                 <p class="font-medium">Call US.</p>
                 <p class="">+254 702 601 502</p>
               </div>
             </div>
             <div class="flex items-center gap-3">
-              <img class="rounded-t-lg" src="/src/assets/img/arrow.svg" alt="location" />
+              <img class="rounded-t-lg" src="/img/arrow.svg" alt="location" />
               <div class="ml-1 grow my-4">
                 <p class="font-medium">Find Us</p>
                 <p class="">
@@ -42,7 +42,7 @@
                 <p class="font-medium">Social Media</p>
                 <div class="flex space-x-3">
                   <a target="_blank" href="https://www.linkedin.com/in/mali-advocates-10a980267/"
-                    ><img class="w-8 h-8" src="/src/assets/img/linkdn.svg" alt="linkdn"
+                    ><img class="w-8 h-8" src="/img/linkdn.svg" alt="linkdn"
                   /></a>
                 </div>
               </div>

@@ -3,22 +3,22 @@
     <div class="text-sm flex justify-between container px-8 sm:px-16 py-2 text-white mx-auto">
       <div class="flex gap-5 flex-wrap justify-between w-full">
         <div class="flex items-center space-x-3">
-          <img src="/src/assets/img/email.svg" class="w-5 h-5" alt="email" />
+          <img src="/img/email.svg" class="w-5 h-5" alt="email" />
           <p class="font-light">Email: info@maliadvocates.com</p>
         </div>
         <div class="hidden sm:flex items-center space-x-3">
-          <img src="/src/assets/img/location.svg" class="w-5 h-5" alt="" />
+          <img src="/img/location.svg" class="w-5 h-5" alt="" />
           <p class="font-light">
             Location: House No.3 CySquare, <br />
             Argwings Kodhek Road, Kilimani
           </p>
         </div>
         <div class="flex items-center space-x-3 gap-5">
-          <img src="/src/assets/img/phone.svg" class="w-5 h-5" alt="" />
+          <img src="/img/phone.svg" class="w-5 h-5" alt="" />
           <p class="font-light">Call Us: +254 702 601502</p>
           <div class="flex space-x-3 m-0">
             <a target="_blank" to="https://www.linkedin.com/in/mali-advocates-10a980267/"><img class="w-8 h-8"
-                src="/src/assets/img/linkdn.svg" alt="linkdn" /></a>
+                src="/img/linkdn.svg" alt="linkdn" /></a>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
     <div class="bg-white shadow-md">
       <nav class="container relative flex items-center justify-between mx-auto px-8 sm:px-16 z-30 py-5 relative">
         <div class="">
-          <a to="/" class="w-30 flex items-center"><img src="/public/logo2.jpg" alt="mali-advocates" class="" /></a>
+          <a to="/" class="w-30 flex items-center"><img src="/logo2.jpg" alt="mali-advocates" class="" /></a>
         </div>
         <div class="hidden lg:flex space-x-3 font-light text-sm">
           <RouterLink to="/" class="text-[var(--color-primary)] uppercase py-2 px-3 rounded-md hover:bg-gray-100">Home</RouterLink>

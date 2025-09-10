@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div
-      class="relative bg-[url(/src/assets/img/law-books.png)] h-[470px] bg-cover bg-center services bg-no-repeat text-center"
+      class="relative bg-[url(/img/law-books.png)] h-[470px] bg-cover bg-center services bg-no-repeat text-center"
     >
       <div class="absolute inset-0 h-full w-full overflow-hidden bg-fixed bg-[var(--color-primary)] opacity-80">
         <div class="container mx-auto px-8 sm:px-16 flex h-full items-center justify-center">

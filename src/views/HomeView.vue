@@ -8,7 +8,7 @@ import Values from '@/components/Values.vue'
 <template>
   <div>
     <div
-      class="relative bg-[url(/src/assets/img/international-law.jpg)] h-[711px] bg-cover bg-no-repeat"
+      class="relative bg-[url(/img/international-law.jpg)] h-[711px] bg-cover bg-no-repeat"
       style=""
     >
       <div
@@ -45,7 +45,7 @@ import Values from '@/components/Values.vue'
     >
       <div class="w-full md:w-1/2 px-5 mb-10 md:mb-0">
         <div class="mt-11">
-          <img src="/src/assets/img/about-us.png" class="object-cover" alt="about-us" />
+          <img src="/img/about-us.png" class="object-cover" alt="about-us" />
         </div>
       </div>
       <div class="w-full md:w-1/2">
@@ -142,7 +142,7 @@ import Values from '@/components/Values.vue'
       </div>
       <div class="w-full md:w-1/2 px-5 mb-10 md:mb-0">
         <div class="mt-11">
-          <img src="/src/assets/img/why-us.png" class="object-cover" alt="about-us" />
+          <img src="/img/why-us.png" class="object-cover" alt="about-us" />
         </div>
       </div>
     </div>

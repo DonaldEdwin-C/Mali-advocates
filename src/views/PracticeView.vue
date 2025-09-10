@@ -6,43 +6,43 @@ import Values from '@/components/Values.vue'
 
 const practises = ref([
   {
-    icon: '/src/assets/img/practise/business.svg',
+    icon: '/img/practise/business.svg',
     title: 'Corporate & Commercial',
     description:
       'We at CKoile Advocates LLP strive to empower our clients to traverse the intricate world ofcorporate and commercial law with confidence and proficiency. Our vast experience in corporate and commercial law has positioned us as partners for a wide array of clients ranging fromstartups, foreign and local corporations, and SMEs to large corporations.Our corporate Commercial practice provides comprehensive legal services by combiningemployment, financial, regulatory and taxation expertise.',
   },
   {
-    icon: '/src/assets/img/practise/construction.svg',
+    icon: '/img/practise/construction.svg',
     title: 'Contracted Corporate Services',
     description:
       'Our corporate services practice specializes in providing company secretarial services, contracted corporate legal counsel services, governance advisory and other specialized corporate services in Kenya. We are experts in compliance management and reporting and are conversant with the laws and regulations that apply to companies in Kenya. We regularly advise on compliance by companies in regulated sectors such as insurance, retirement benefits, and capital markets. Our lawyers frequently advise clients on Kenya’s regulatory regime relating to privacy and data protection. We monitor and advise on new legislation in all areas to ensure our clients are well informed in advance of any changes in the regulatory regimes which require their compliance.We have experience in dealings with various regulatory bodies such as Capital Markets Authority, the Registrar of Companies, sector regulators and local tax authorities.',
   },
   {
-    icon: '/src/assets/img/practise/debt.svg',
+    icon: '/img/practise/debt.svg',
     title: 'Debt Recovery',
     description:
       'We at CKoile Advocates LLP acknowledge that financial stability is important to individuals, startups, SMEs and companies. Our aim is to go over and beyond to ensure our clients debt recovery needs are met, in a dignified manner, while maintaining relationships.',
   },
   {
-    icon: '/src/assets/img/practise/file-contract.svg',
+    icon: '/img/practise/file-contract.svg',
     title: 'Dispute Resolution',
     description:
       'CKoile Advocates LLP specializes primarily in handling litigation and arbitration cases on a daily basis, representing clients in both domestic and international courts and tribunals. Our dispute resolution team possess expertise in litigation and various alternative dispute resolution methods such as mediation and arbitration. Our arears of expertise include Cross border Dispute resolution,Corporate and Securities litigation, insolvency litigation, financial service regulatory matters, competition, banking and finance, media law, employment and labor, family law (children matters, adoption, divorce) The firm is at the forefront of both domestic and international arbitration. We have represented clients in local and international arbitration tribunals for the settlement of investment disputes including the London Court of International Arbitration (LCIA).',
   },
   {
-    icon: '/src/assets/img/practise/horse.svg',
+    icon: '/img/practise/horse.svg',
     title: 'Capital Markets',
     description:
       'We work with issuers, holders, underwriters, shareholders, sponsors, arrangers, fund managers, trustees, custodians on a broad range of capital market offerings. We aim to provide our clients with capital raising, equity, mergers and acquisitions, private equity, venture capital, private placements, corporate governance and regulatory compliance.',
   },
   {
-    icon: '/src/assets/img/practise/invoice.svg',
+    icon: '/img/practise/invoice.svg',
     title: 'Real Estate, Construction and Conveyancing',
     description:
       'CKoile Advocates LLP operates a robust real estate construction law practice. We negotiatiate, draft and manage contruction and conveyancing agreements. We have worked hand in hand with some of the top real estate investment companies, assisting in the closing of all their commercial and residential contracts on behalf of the entities and their clients.',
   },
   {
-    icon: '/src/assets/img/practise/justice.svg',
+    icon: '/img/practise/justice.svg',
     title: 'Tax',
     description:
       'We offer advisory, compliance and tax disputes resolution by conducting thorough assessments of transactions and business structures, aiming to provide practical solutions tailored to the demands of today’s ever changing and challenging business landscape. Our tax compliance and advisory services are tailored to enhance business efficacy and efficiency.',

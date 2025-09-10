@@ -13,7 +13,7 @@
                
                 <div class="my-2 flex justify-between w-full md:w-auto">
                     <div class="text-sm md:text-base mx-auto">
-                        <button class="bg-white hover:bg-[#D9B679] text-[#D9B679] hover:text-white border border-[#D9B679] font-semibold text-[16px] px-5 py-2 rounded-md flex items-center ">Download <img src="../assets/img/download.svg" alt="download icon" class="w-5 h-5 mx-2"></button>
+                        <button class="bg-white hover:bg-[#D9B679] text-[#D9B679] hover:text-white border border-[#D9B679] font-semibold text-[16px] px-5 py-2 rounded-md flex items-center ">Download <img src="/img/download.svg" alt="download icon" class="w-5 h-5 mx-2"></button>
                     </div>
                 </div>
             </div>
