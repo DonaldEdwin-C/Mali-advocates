@@ -9,7 +9,7 @@ const practises = ref([
     icon: '/src/assets/img/practise/business.svg',
     title: 'Corporate & Commercial',
     description:
-      'We at MALI Advocates LLP strive to empower our clients to traverse the intricate world ofcorporate and commercial law with confidence and proficiency. Our vast experience in corporate and commercial law has positioned us as partners for a wide array of clients ranging fromstartups, foreign and local corporations, and SMEs to large corporations.Our corporate Commercial practice provides comprehensive legal services by combiningemployment, financial, regulatory and taxation expertise.',
+      'We at CKoile Advocates LLP strive to empower our clients to traverse the intricate world ofcorporate and commercial law with confidence and proficiency. Our vast experience in corporate and commercial law has positioned us as partners for a wide array of clients ranging fromstartups, foreign and local corporations, and SMEs to large corporations.Our corporate Commercial practice provides comprehensive legal services by combiningemployment, financial, regulatory and taxation expertise.',
   },
   {
     icon: '/src/assets/img/practise/construction.svg',
@@ -21,13 +21,13 @@ const practises = ref([
     icon: '/src/assets/img/practise/debt.svg',
     title: 'Debt Recovery',
     description:
-      'We at MALI Advocates LLP acknowledge that financial stability is important to individuals, startups, SMEs and companies. Our aim is to go over and beyond to ensure our clients debt recovery needs are met, in a dignified manner, while maintaining relationships.',
+      'We at CKoile Advocates LLP acknowledge that financial stability is important to individuals, startups, SMEs and companies. Our aim is to go over and beyond to ensure our clients debt recovery needs are met, in a dignified manner, while maintaining relationships.',
   },
   {
     icon: '/src/assets/img/practise/file-contract.svg',
     title: 'Dispute Resolution',
     description:
-      'MALI Advocates LLP specializes primarily in handling litigation and arbitration cases on a daily basis, representing clients in both domestic and international courts and tribunals. Our dispute resolution team possess expertise in litigation and various alternative dispute resolution methods such as mediation and arbitration. Our arears of expertise include Cross border Dispute resolution,Corporate and Securities litigation, insolvency litigation, financial service regulatory matters, competition, banking and finance, media law, employment and labor, family law (children matters, adoption, divorce) The firm is at the forefront of both domestic and international arbitration. We have represented clients in local and international arbitration tribunals for the settlement of investment disputes including the London Court of International Arbitration (LCIA).',
+      'CKoile Advocates LLP specializes primarily in handling litigation and arbitration cases on a daily basis, representing clients in both domestic and international courts and tribunals. Our dispute resolution team possess expertise in litigation and various alternative dispute resolution methods such as mediation and arbitration. Our arears of expertise include Cross border Dispute resolution,Corporate and Securities litigation, insolvency litigation, financial service regulatory matters, competition, banking and finance, media law, employment and labor, family law (children matters, adoption, divorce) The firm is at the forefront of both domestic and international arbitration. We have represented clients in local and international arbitration tribunals for the settlement of investment disputes including the London Court of International Arbitration (LCIA).',
   },
   {
     icon: '/src/assets/img/practise/horse.svg',
@@ -39,7 +39,7 @@ const practises = ref([
     icon: '/src/assets/img/practise/invoice.svg',
     title: 'Real Estate, Construction and Conveyancing',
     description:
-      'MALI Advocates LLP operates a robust real estate construction law practice. We negotiatiate, draft and manage contruction and conveyancing agreements. We have worked hand in hand with some of the top real estate investment companies, assisting in the closing of all their commercial and residential contracts on behalf of the entities and their clients.',
+      'CKoile Advocates LLP operates a robust real estate construction law practice. We negotiatiate, draft and manage contruction and conveyancing agreements. We have worked hand in hand with some of the top real estate investment companies, assisting in the closing of all their commercial and residential contracts on behalf of the entities and their clients.',
   },
   {
     icon: '/src/assets/img/practise/justice.svg',
@@ -56,7 +56,7 @@ const practises = ref([
       <div>
         <h1 class="flex justify-center mb-4 text-4xl font-bold">Practice Areas</h1>
         <p class="flex justify-center w-3/4 mx-auto text-center px-3">
-          MALI Advocates LLP operates through three distinct practice groups, namely the Litigation
+          CKoile Advocates LLP operates through three distinct practice groups, namely the Litigation
           and Alternative Dispute Resolution Practice Group, Real Estate and Banking Practice Group,
           and Commercial and Insolvency Practice Group.
         </p>

@@ -56,12 +56,12 @@ import Values from '@/components/Values.vue'
           </h1>
           <div class="text-lg">
             <p class="my-2">
-              MALI Advocates LLP is a distinguished Kenyan law firm specializing in commercial and
+              CKoile Advocates LLP is a distinguished Kenyan law firm specializing in commercial and
               corporate law. The firm has established itself as a reputable legal entity providing a
               wide range of legal service with a commitment to excellence.
             </p>
             <p class="my-2">
-              MALI Advocates LLP operates through three distinct practice groups namely litigation
+              CKoile Advocates LLP operates through three distinct practice groups namely litigation
               and dispute resolution, Real Estate and Banking and Commercial and Insolvency
               Practice. Our Team
             </p>
